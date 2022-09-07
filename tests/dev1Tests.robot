@@ -55,7 +55,6 @@ US-0000007 Test Case
     ClickText             Purchase Date               partial_match=False
     ClickText             1
     ClickText             Save & New
-
     TypeText              *Bike Name                  Marin Bike Test
     PickList              Brand                       Marin
     ClickText             Purchase Date               partial_match=False
@@ -63,7 +62,6 @@ US-0000007 Test Case
     ClickText             Previous Month
     ClickText             1
     ClickText             Save & New
-
     TypeText              *Bike Name                  Cannondale Bike Test
     PickList              Brand                       Cannondale
     ClickText             Purchase Date               partial_match=False
@@ -71,8 +69,6 @@ US-0000007 Test Case
     ClickText             Previous Month
     ClickText             10
     # ClickText           Save & New                  COMMENTING OUT BECAUSE INTENTIONALLY WRONG
-
-
     # TypeText            *Bike Name                  Rad Power Bike Test
     #PickList             Brand                       Rad Power
     # ClickText           Purchase Date               partial_match=False
