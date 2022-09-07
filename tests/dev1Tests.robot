@@ -47,9 +47,10 @@ US-0000007 Test Case
     ClickText             Save                        partial_match=False
     ClickText             Close                       partial_match=False
     ClickText             Bike Purchaser Test         partial_match=False
-    ScrollTo              Bikes
     #create additional test bikes
-    ClickText             New                         partial_match=False
+
+    VerifyText             Bikes(1)                Trek Bike Test
+    ClickText             New                         Bikes(1)                partial_match=False
     TypeText              *Bike Name                  Salsa Bike Test
     PickList              Brand                       Salsa
     ClickText             Purchase Date               partial_match=False
@@ -78,7 +79,7 @@ US-0000007 Test Case
     ClickText             Close Trek Bike Test
 
 US-0000007 Delete Test Data
-  [tags]                Test data
+    [tags]                Test data
     QWeb.Appstate         Login
     ClickText             App Launcher
     LaunchApp             Bike Shop
@@ -99,4 +100,4 @@ US-0000007 Delete Test Data
     RunBlock              NoData                      timeout=180s            exp_handler=DeleteBikes
     Set Suite Variable    ${data}                     Rad Power Bike Test
     RunBlock              NoData                      timeout=180s            exp_handler=DeleteBikes
-    LaunchApp              Sales
+    LaunchApp             Sales
