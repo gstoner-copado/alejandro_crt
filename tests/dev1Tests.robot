@@ -70,13 +70,13 @@ US-0000007 Test Case
     ClickText          Previous Month
     ClickText          Previous Month
     ClickText          10
-    ClickText          Save & New
+    # ClickText          Save & New                                    COMMENTING OUT BECAUSE INTENTIONALLY WRONG
     
-    PickList           Brand                       Rad Power
-    TypeText           *Bike Name                  Rad Power Bike Test
-    ClickText          Purchase Date               partial_match=False
-    ClickText          Previous Month
-    ClickText          15
+    # PickList           Brand                       Rad Power
+    # TypeText           *Bike Name                  Rad Power Bike Test
+    # ClickText          Purchase Date               partial_match=False
+    # ClickText          Previous Month
+    # ClickText          15
     ClickText          Save                        partial_match=False
     ClickText          Close Trek Bike Test
 #Delete Test Account
@@ -116,9 +116,11 @@ US-0000007 Test Case
     UseModal           On
     ClickText          Delete
     UseModal           Off
+    # Clicktext          Bike Test                   partial_match=True        COMMENTING OUT BECAUSE INTENTIONALLY WRONG
+    # ClickText          Show more actions
+    # ClickText          Delete
+    # UseModal           On
+    # ClickText          Delete
+    # UseModal           Off
     VerifyNoText       Bike Test
 
-
-
-    #                  create bike object test preconfigured. add create bike app as additional step? in trial setup, creating additional
-    # about creating CRT and setting up. look into creating package with config updates. QA person is the one building the test case.
