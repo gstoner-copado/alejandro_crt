@@ -98,3 +98,20 @@ DeleteLeads
     VerifyText                  Undo
     VerifyNoText                Undo
     ClickText                   Leads                       partial_match=False
+Delete Test Bikes
+    # [Documentation]    Block created using the QEditor
+    #  QWeb.Appstate      Login
+    # ClickText          App Launcher
+    # LaunchApp          Bike Shop
+    # ClickText          Show Navigation Menu
+    # ClickText          Bikes
+    # VerifyText         Bike Test
+    # Clicktext          Bike Test                   partial_match=True
+    # ClickText          Show more actions
+    # ClickText          Delete
+    # UseModal           On
+    # ClickText          Delete
+    # VerifyText
+    # UseModal           Off
+    # VerifyNoText
+
