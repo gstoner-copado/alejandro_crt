@@ -18,6 +18,9 @@ Default Tags         testgen                     dev1
     ClickText        Show Navigation Menu
     VerifyText       Bikes
     ClickText        Bikes
+   
+US-0000007 Test Case
+   QWeb.Appstate    Login
 
    #  create bike object test preconfigured. add create bike app as additional step? in trial setup, creating additional 
-   # about creating CRT and setting up. look into creating package with config updates.
+   # about creating CRT and setting up. look into creating package with config updates. QA person is the one building the test case.
