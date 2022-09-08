@@ -80,7 +80,6 @@ US-0000007 Test Case
 
 US-0000007 Delete Test Data
     [tags]                Test data
-    QWeb.Appstate         Login
     ClickText             App Launcher
     LaunchApp             Bike Shop
     ClickText             Show Navigation Menu
