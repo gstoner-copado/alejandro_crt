@@ -100,3 +100,6 @@ US-0000007 Delete Test Data
     Set Suite Variable    ${data}                     Rad Power Bike Test
     RunBlock              NoData                      timeout=180s            exp_handler=DeleteBikes
     LaunchApp             Sales
+
+Bicycle Object Test
+    Home
