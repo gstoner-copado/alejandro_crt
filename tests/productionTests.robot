@@ -2,7 +2,7 @@
 Resource                   ../resources/common.robot
 Suite Setup                Setup Browser
 Suite Teardown             End suite
-Default Tags               testgen                     production
+Default Tags               production
 
 *** Test Cases ***
 Entering A Lead             
