@@ -4,7 +4,7 @@ Library                   QForce
 Resource                  ../resources/common.robot
 Suite Setup               Setup Browser
 Suite Teardown            End suite
-Default Tags              testgen                     dev1
+Default Tags              dev1
 
 *** Test Cases ***
  US-0000006 Test Case
