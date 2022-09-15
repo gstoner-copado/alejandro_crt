@@ -102,6 +102,7 @@ US-0000007 Delete Test Data
     LaunchApp             Sales
 
 Bicycle Object Test
+    Setup Browser
     Home
     LaunchApp             Bicycles        #Test will fail at this point until custom tab is created
     ClickText             New                         partial_match=False
