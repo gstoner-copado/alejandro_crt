@@ -49,7 +49,7 @@ US-0000007 Test Case
     ClickText             Bike Purchaser Test         partial_match=False
     #create additional test bikes
 
-    VerifyText             Bikes(1)                Trek Bike Test
+    VerifyText            Bikes(1)                    Trek Bike Test
     ClickText             New                         Bikes(1)                partial_match=False
     TypeText              *Bike Name                  Salsa Bike Test
     PickList              Brand                       Salsa
@@ -103,3 +103,15 @@ US-0000007 Delete Test Data
 
 Bicycle Object Test
     Home
+    LaunchApp             Bicycles        #Test will fail at this point until custom tab is created
+    ClickText             New                         partial_match=False
+    TypeText              *Bicycle Name               Test Bike Record
+    PickList              Type                        Road
+    ClickText             Save                        partial_match=False
+    VerifyField           Bicycle Name                Test Bike Record
+    VerifyField           Type                        Road
+    ClickText             Show more actions
+    ClickText             Delete
+    UseModal              On
+    ClickText             Delete
+    UseModal              Off
