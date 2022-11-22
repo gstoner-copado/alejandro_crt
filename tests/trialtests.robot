@@ -32,9 +32,13 @@ Car Test Create Record
     ClickCheckbox           Driveable                   on
     ClickText               Save                        partial_match=True
     VerifyText              was created
+
+    
     # VALIDATION
     VerifyField             Price                       $999,999.99
-    VerifyCheckboxStatus    Driveable                   on
+    VerifyCheckboxValue     Driveable                   on    
+
+
     # DELETION/CLEANUP
     ClickText               Delete
     UseModal                On
